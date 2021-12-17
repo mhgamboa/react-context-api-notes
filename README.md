@@ -5,7 +5,7 @@ Learning from the [React documentation](https://reactjs.org/docs/context.html)
 - `Context` allows you to pass data to components without having to use `props`
 - `const MyContext = React.createContext(defaultValue);` creates a **Context object**
   - `defaultValue` is only used when a component doesn't have a matching provider above it in the component tree
-- **Every Context object comes with a React Provider Component.** EX: `< value={/* some value */}> </ MyContext.Provider`
+- **Every Context object comes with a React Provider Component.** EX: `< value={/* some value */}> </ MyContext.Provider>`
   - The Provider Component accepts a prop called `value`. This is the data that is passed to consumers. When `value` changes all descendants re-render.
   - This provider component should be set up in a parent component. set the `value` prop to an object that uses state. (See example below)
 - To have components subscribe to context providers create a descendent component and use the `useContext()` hook. You can now access the data without using props. Example:
